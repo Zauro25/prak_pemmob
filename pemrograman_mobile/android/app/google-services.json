@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "937169410719",
+    "project_id": "pem-mob-ee806",
+    "storage_bucket": "pem-mob-ee806.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937169410719:android:b6d69c3758f49dbcf0a0aa",
+        "android_client_info": {
+          "package_name": "com.example.pemrograman_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6n6kLmPckd1re3mOuLFysoFI-7QtSjYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
