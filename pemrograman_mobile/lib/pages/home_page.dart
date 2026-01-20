@@ -23,7 +23,24 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _signOut() async {
-    await authService.signOut();
+    try {
+      print('Starting logout...');
+      await authService.signOut();
+      print('Logout successful');
+      if (mounted) {
+        Navigator.pushReplacementNamed(context, '/login');
+      }
+    } catch (e) {
+      print('Logout error: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Logout error: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 
   @override
@@ -37,9 +54,9 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         actions: [
           PopupMenuButton<String>(
-            onSelected: (value) {
+            onSelected: (value) async {
               if (value == 'logout') {
-                _signOut();
+                await _signOut();
               }
             },
             itemBuilder: (context) => [

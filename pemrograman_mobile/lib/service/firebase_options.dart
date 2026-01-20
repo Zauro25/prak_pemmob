@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,37 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'your-web-api-key',
-    appId: 'your-web-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    authDomain: 'your-project-id.firebaseapp.com',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyBZzanUrqpLVIjd2I_pfJOQVI3AzVCwNDs',
+    appId: '1:937169410719:web:4eb03afbd8c728a5f0a0aa',
+    messagingSenderId: '937169410719',
+    projectId: 'pem-mob-ee806',
+    authDomain: 'pem-mob-ee806.firebaseapp.com',
+    storageBucket: 'pem-mob-ee806.firebasestorage.app',
+    measurementId: 'G-GK9ZSZNX72',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'your-android-api-key',
-    appId: 'your-android-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyD6n6kLmPckd1re3mOuLFysoFI-7QtSjYk',
+    appId: '1:937169410719:android:b6d69c3758f49dbcf0a0aa',
+    messagingSenderId: '937169410719',
+    projectId: 'pem-mob-ee806',
+    storageBucket: 'pem-mob-ee806.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'your-ios-api-key',
-    appId: 'your-ios-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyBuzUlW7ts4ObwXZ8A9UKDCiHS5Fa4wkkY',
+    appId: '1:937169410719:ios:606edeff1a76e9c1f0a0aa',
+    messagingSenderId: '937169410719',
+    projectId: 'pem-mob-ee806',
+    storageBucket: 'pem-mob-ee806.firebasestorage.app',
     iosBundleId: 'com.example.pemrogramanMobile',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'your-macos-api-key',
-    appId: 'your-macos-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyBuzUlW7ts4ObwXZ8A9UKDCiHS5Fa4wkkY',
+    appId: '1:937169410719:ios:606edeff1a76e9c1f0a0aa',
+    messagingSenderId: '937169410719',
+    projectId: 'pem-mob-ee806',
+    storageBucket: 'pem-mob-ee806.firebasestorage.app',
     iosBundleId: 'com.example.pemrogramanMobile',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBZzanUrqpLVIjd2I_pfJOQVI3AzVCwNDs',
+    appId: '1:937169410719:web:6a112ffefa266263f0a0aa',
+    messagingSenderId: '937169410719',
+    projectId: 'pem-mob-ee806',
+    authDomain: 'pem-mob-ee806.firebaseapp.com',
+    storageBucket: 'pem-mob-ee806.firebasestorage.app',
+    measurementId: 'G-WYD5EWVLNR',
   );
 }
