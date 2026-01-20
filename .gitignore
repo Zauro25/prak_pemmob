@@ -2,6 +2,9 @@
 **/build/
 *.zip
 
+# Exclude folders
+praktikum 1/
+
 # Flutter/Dart specific
 .dart_tool/
 .flutter-plugins
